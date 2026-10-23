@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 100">
-<g transform="translate(18 0) skewX(-12)" fill="none" stroke="#15172A" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(18 3) skewX(-12)" fill="none" stroke="#15172A" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
 <path d="M44 46 C 40 37, 31 34, 25 37 C 15 42, 12 60, 16 72 C 20 84, 34 86, 41 74"/>
 <path d="M44 36 L 42 72 C 41 82, 45 87, 52 84 C 64 78, 86 48, 84 22 C 83 2, 60 0, 60 22 L 60 74 C 60 85, 68 88, 80 84"/>
 </g>
