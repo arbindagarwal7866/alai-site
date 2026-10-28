@@ -20,11 +20,11 @@
 
 <main class="doc">
   <h1>Privacy policy</h1>
-  <p class="meta">Last updated 23 October 2026 · Contact <a href="mailto:alai.app.team@gmail.com">alai.app.team@gmail.com</a></p>
+  <p class="meta">Last updated 28 October 2026 · Contact <a href="mailto:alai.app.team@gmail.com">alai.app.team@gmail.com</a></p>
   <p>Alai is a student-made app for VIT students (Vellore and Bhopal). It is not affiliated with, endorsed by or run by VIT.</p>
 
   <div class="card">
-    <strong>The short version.</strong> Alai reads your VTOP data only while you sync, and keeps everything it learns on your phone. It has no server of its own, no accounts, no ads, no analytics and no trackers.
+    <strong>The short version.</strong> Alai reads your VTOP data only while you sync, and keeps your attendance, marks, timetable and notes on your phone. Only if you turn on sharing with classmates does Alai use a small server, for your VIT Google sign-in and the deadlines you choose to share with your class. No ads, no analytics, no trackers.
   </div>
 
   <h2>What Alai reads, and when</h2>
@@ -47,6 +47,15 @@
     <li>Phone numbers you add for your faculty</li>
     <li>Your name and register number (from your VTOP profile and login), encrypted, only to sign things you send yourself, like a mail to your faculty. Never sent to Alai's server or any third party</li>
   </ul>
+  <p><strong>Only if you turn on sharing</strong> (Settings → Classmates, off until you sign in), Alai's server (hosted on Supabase) keeps:</p>
+  <ul>
+    <li>your VIT Google account's email address and name, and an account ID, so you can sign in. Only vitstudent.ac.in and vitbhopal.ac.in accounts are accepted</li>
+    <li>a scrambled key for your VTOP account (not your register number), so one Google account matches one VTOP account</li>
+    <li>the IDs of your class sections, so you see only your own classes' shared deadlines</li>
+    <li>deadlines you choose to share with your class, and reports you make about shared deadlines. Your classmates in that class see the deadline, not your name or email</li>
+    <li>club and chapter events from the VTOP home page, which are not about you</li>
+  </ul>
+  <p>Your attendance, marks, timetable, grades, notes, photos and VTOP password are never sent to the server.</p>
   <p>Android's automatic cloud backup is turned off for Alai, so this data is not copied to Google Drive either.</p>
 
   <h2>What leaves your phone</h2>
@@ -54,16 +63,17 @@
     <table>
       <tr><th>Where it goes</th><th>What is sent</th><th>Why</th></tr>
       <tr><td>Your campus's VTOP (vtop.vit.ac.in or vtop.vitbhopal.ac.in)</td><td>Ordinary page requests from your own logged-in session</td><td>To read your data when you sync</td></tr>
+      <tr><td>Alai's server (Supabase), only if you turn on sharing</td><td>Your VIT Google sign-in, class section IDs, the deadlines you share and campus events (see above)</td><td>To share deadlines with your class</td></tr>
       <tr><td>Expo's update service (expo.dev)</td><td>The app's version, update channel and a random install number. Nothing about you or your VTOP data</td><td>To check for and download new versions of the app when it opens</td></tr>
     </table>
   </div>
-  <p>Nothing else leaves your phone on its own. Image to PDF runs on the phone; your pictures are never uploaded. If a sync breaks, "Send a report" describes the VTOP page with every name, number and mark masked, and goes only where you choose to share it.</p>
+  <p>All of this is sent over HTTPS. Nothing else leaves your phone on its own. Image to PDF runs on the phone; your pictures are never uploaded. If a sync breaks, "Send a report" describes the VTOP page with every name, number and mark masked, and goes only where you choose to share it.</p>
 
   <h2>Alai never</h2>
   <ul class="never">
     <li>sends your VTOP password anywhere except VTOP's own login page, or reads your captcha</li>
     <li>changes anything on VTOP</li>
-    <li>uploads your data anywhere</li>
+    <li>uploads your attendance, marks, timetable, notes or photos anywhere</li>
     <li>shows ads, or uses analytics or trackers</li>
     <li>reads your messages, mail, contacts or other apps</li>
   </ul>
@@ -78,14 +88,15 @@
     <li><strong>Mail and phone apps:</strong> only when you tap a faculty member's email or number.</li>
   </ul>
 
-  <h2>Deleting your data</h2>
-  <p>Settings → Your data → Delete all my data erases everything, notes and files included. Uninstalling Alai does the same. Because nothing is stored anywhere else, there is nothing for us to delete on a server.</p>
+  <h2 id="delete">Deleting your Alai account and data</h2>
+  <p><strong>Your account on Alai's server</strong> (only if you turned on sharing): in Alai, open Settings → Classmates → Delete my account. This deletes, right away and for good, your sign-in (email, name, account ID), your VTOP link key, your class section IDs, every deadline you shared and every report you made. Nothing is kept afterwards. If you can't open the app, mail <a href="mailto:alai.app.team@gmail.com">alai.app.team@gmail.com</a> from the same VIT email and we will delete it within 7 days.</p>
+  <p><strong>Everything on your phone:</strong> Settings → Your data → Delete all my data erases it, notes and files included. Uninstalling Alai does the same.</p>
 
   <h2>Children</h2>
-  <p>Alai is meant for university students and is not directed at children under 13.</p>
+  <p>Alai is meant for university students and is not directed at anyone under 18.</p>
 
   <h2>Changes</h2>
-  <p>If this policy changes, the new version will be posted here and shown in the app before it applies. If a future feature ever needs to share something (such as a club events list), it will only be information that is not about you, and the app will tell you first.</p>
+  <p>If this policy changes, the new version will be posted here and shown in the app before it applies. New features that send anything new off your phone will be listed here first.</p>
 
   <h2>Contact</h2>
   <p>Questions: <a href="mailto:alai.app.team@gmail.com">alai.app.team@gmail.com</a>.</p>
